@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-label="Mock screenshot of PhotoBooth app">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#0b1220" />
+    </linearGradient>
+    <style><![CDATA[
+      .frame { fill: #0b1220; stroke: #111827; stroke-width: 2px; }
+      .header { fill: #0b1220; }
+      .title { font: 600 28px system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; fill: #fff; }
+      .sub { font: 400 16px system-ui; fill: #9CA3AF; }
+      .camera { fill: #111827; stroke: #1F2937; stroke-width: 2px; }
+      .button { fill: #10B981; rx: 8; }
+      .button-text { font: 600 16px system-ui; fill: white; }
+      .muted { fill: #6B7280; font: 14px system-ui; }
+    ]]></style>
+  </defs>
+
+  <!-- background -->
+  <rect width="1200" height="720" fill="url(#bg)" />
+
+  <!-- app window -->
+  <g transform="translate(80,60)">
+    <rect width="1040" height="600" rx="16" class="frame" />
+
+    <!-- header -->
+    <g transform="translate(28,22)">
+      <text x="0" y="8" class="title">PhotoBooth</text>
+      <text x="0" y="36" class="sub">A tiny Vite + Vue demo — capture, preview, and save</text>
+    </g>
+
+    <!-- camera area -->
+    <g transform="translate(60,120)">
+      <rect width="920" height="360" rx="12" class="camera" />
+      <!-- mock camera content -->
+      <g transform="translate(40,30)">
+        <rect width="240" height="160" rx="8" fill="#0b1220" stroke="#111827" />
+        <rect x="280" width="540" height="300" rx="8" fill="#0b1220" stroke="#111827" />
+        <circle cx="120" cy="80" r="44" fill="#111827" stroke="#374151" />
+        <text x="280" y="160" class="muted">Live preview area</text>
+      </g>
+    </g>
+
+    <!-- controls -->
+    <g transform="translate(60,510)">
+      <rect x="0" y="0" width="200" height="44" class="button" />
+      <text x="100" y="30" text-anchor="middle" class="button-text">Capture</text>
+
+      <rect x="240" y="0" width="200" height="44" fill="#3B82F6" rx="8" />
+      <text x="340" y="30" text-anchor="middle" class="button-text">Switch</text>
+
+      <rect x="480" y="0" width="200" height="44" fill="#6B7280" rx="8" />
+      <text x="580" y="30" text-anchor="middle" class="button-text">Save</text>
+
+      <text x="720" y="30" class="muted">Press Capture to take a photo</text>
+    </g>
+
+    <!-- footer small info -->
+    <g transform="translate(28,576)">
+      <text x="0" y="12" class="muted">Built with Vite • View `src/components/PhotoBooth.vue`</text>
+    </g>
+  </g>
+</svg>
